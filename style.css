@@ -1,0 +1,84 @@
+/* Avalanche colour palette */
+:root {
+  --maroon: #701e2e;
+  --silver: #c0c0c0;
+  --blue: #1e3dff;
+  --dark: #111;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: var(--dark);
+  color: var(--silver);
+}
+
+header {
+  text-align: center;
+  background: var(--maroon);
+  padding: 1.5rem;
+  box-shadow: 0 0 10px var(--silver);
+}
+
+header h1 {
+  margin-top: 0.5rem;
+  color: var(--silver);
+}
+
+.team-logo {
+  width: 120px;
+  height: auto;
+}
+
+.schedule-container {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.match-card {
+  background: #1b1b1b;
+  border: 2px solid var(--maroon);
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 0 10px var(--blue);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.match-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px var(--blue);
+}
+
+.match-day {
+  color: var(--maroon);
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.match-info {
+  margin: 0.5rem 0;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.logos img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.score-record {
+  margin-top: 0.5rem;
+  color: var(--blue);
+  font-weight: bold;
+}
