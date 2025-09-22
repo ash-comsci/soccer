@@ -67,7 +67,7 @@ matches.forEach(match => {
     <div class="match-info"><strong>Date:</strong> ${match.date}</div>
     <div class="match-info"><strong>${match.home}</strong> @ <strong>${match.away}</strong></div>
     <div class="logos">
-      <img src="avalanche-logo.png" alt="Avalanche Logo">
+      <img src="logo.png" alt="Avalanche Logo">
       <img src="${match.opponentLogo}" alt="Opponent Logo Placeholder">
     </div>
     <div class="score-record">
