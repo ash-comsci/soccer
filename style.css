@@ -82,3 +82,40 @@ header h1 {
   color: var(--blue);
   font-weight: bold;
 }
+/* Grid container */
+.match-grid {
+  display: grid;
+  grid-template-columns: 1fr;           /* phones: 1 per row */
+  gap: 16px;                             /* space between cards */
+  align-items: start;
+}
+
+/* Cards: make them visually smaller/tighter */
+.match-card {
+  padding: 12px;                         /* reduce internal spacing */
+  border-radius: 10px;
+  border: 1px solid #e2e2e2;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,.06);
+  font-size: 0.95rem;                    /* slightly smaller text */
+}
+
+/* Tighten common elements inside cards, if present */
+.match-card .teams     { gap: 8px; }
+.match-card .meta      { font-size: 0.85rem; opacity: .85; }
+.match-card .score     { font-weight: 700; font-size: 1.15rem; }
+.match-card .team-logo { width: 32px; height: 32px; object-fit: contain; }
+
+/* Tablet: 2 across */
+@media (min-width: 640px) {
+  .match-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Desktop and up: 3 across */
+@media (min-width: 960px) {
+  .match-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
